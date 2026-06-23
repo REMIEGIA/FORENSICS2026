@@ -1,27 +1,3 @@
-C:\Users\Admin>cd /d "E:\MASTER1\g140a001\MEMORY" && "volatility2 (1).exe" -f OtterCTF.vmem imageinfo
-Volatility Foundation Volatility Framework 2.6
-INFO    : volatility.debug    : Determining profile based on KDBG search...
-          Suggested Profile(s) : Win7SP1x64, Win7SP0x64, Win2008R2SP0x64, Win2008R2SP1x64_23418, Win2008R2SP1x64, Win7SP1x64_23418
-                     AS Layer1 : WindowsAMD64PagedMemory (Kernel AS)
-                     AS Layer2 : FileAddressSpace (E:\MASTER1\g140a001\MEMORY\OtterCTF.vmem)
-                      PAE type : No PAE
-                           DTB : 0x187000L
-                          KDBG : 0xf80002c430a0L
-          Number of Processors : 2
-     Image Type (Service Pack) : 1
-                KPCR for CPU 0 : 0xfffff80002c44d00L
-                KPCR for CPU 1 : 0xfffff880009ef000L
-             KUSER_SHARED_DATA : 0xfffff78000000000L
-           Image date and time : 2018-08-04 19:34:22 UTC+0000
-     Image local date and time : 2018-08-04 22:34:22 +0300
-
-E:\MASTER1\g140a001\MEMORY>cd Volatility
-The system cannot find the path specified.
-
-E:\MASTER1\g140a001\MEMORY>volatility2.exe -f OtterCTF.vmem --profile=Win7SP1x64 lsadump
-'volatility2.exe' is not recognized as an internal or external command,
-operable program or batch file.
-
 E:\MASTER1\g140a001\MEMORY>dir OtterCTF.vmem
  Volume in drive E is ban 小姐
  Volume Serial Number is 4040-957C
@@ -31,42 +7,6 @@ E:\MASTER1\g140a001\MEMORY>dir OtterCTF.vmem
 2026/06/02  下午 04:31     2,147,483,648 OtterCTF.vmem
                1 File(s)  2,147,483,648 bytes
                0 Dir(s)  345,901,023,232 bytes free
-
-E:\MASTER1\g140a001\MEMORY>volatility2.exe -f OtterCTF.vmem imageinfo
-'volatility2.exe' is not recognized as an internal or external command,
-operable program or batch file.
-
-E:\MASTER1\g140a001\MEMORY>volatility2.exe -f OtterCTF.vmem imageinfo
-Volatility Foundation Volatility Framework 2.6
-INFO    : volatility.debug    : Determining profile based on KDBG search...
-          Suggested Profile(s) : Win7SP1x64, Win7SP0x64, Win2008R2SP0x64, Win2008R2SP1x64_23418, Win2008R2SP1x64, Win7SP1x64_23418
-                     AS Layer1 : WindowsAMD64PagedMemory (Kernel AS)
-                     AS Layer2 : FileAddressSpace (E:\MASTER1\g140a001\MEMORY\OtterCTF.vmem)
-                      PAE type : No PAE
-                           DTB : 0x187000L
-                          KDBG : 0xf80002c430a0L
-          Number of Processors : 2
-     Image Type (Service Pack) : 1
-                KPCR for CPU 0 : 0xfffff80002c44d00L
-                KPCR for CPU 1 : 0xfffff880009ef000L
-             KUSER_SHARED_DATA : 0xfffff78000000000L
-           Image date and time : 2018-08-04 19:34:22 UTC+0000
-     Image local date and time : 2018-08-04 22:34:22 +0300
-
-E:\MASTER1\g140a001\MEMORY>volatility2.exe -f OtterCTF.vmem --profile=Win7SP1x64 lsadump
-Volatility Foundation Volatility Framework 2.6
-DefaultPassword
-0x00000000  28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   (...............
-0x00000010  4d 00 6f 00 72 00 74 00 79 00 49 00 73 00 52 00   M.o.r.t.y.I.s.R.
-0x00000020  65 00 61 00 6c 00 6c 00 79 00 41 00 6e 00 4f 00   e.a.l.l.y.A.n.O.
-0x00000030  74 00 74 00 65 00 72 00 00 00 00 00 00 00 00 00   t.t.e.r.........
-
-DPAPI_SYSTEM
-0x00000000  2c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ,...............
-0x00000010  01 00 00 00 36 9b ba a9 55 e1 92 82 09 e0 63 4c   ....6...U.....cL
-0x00000020  20 74 63 14 9e d8 a0 4b 45 87 5a e4 bc f2 77 a5   .tc....KE.Z...w.
-0x00000030  25 3f 47 12 0b e5 4d a5 c8 35 cf dc 00 00 00 00   %?G...M..5......
-
 
 E:\MASTER1\g140a001\MEMORY>volatility2.exe -h
 Volatility Foundation Volatility Framework 2.6
